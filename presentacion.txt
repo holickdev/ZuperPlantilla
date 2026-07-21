@@ -1,0 +1,20 @@
+1. Descripcion de su proyecto
+1.1 Que hace
+1.2 A quien ayuda
+1.3 Porque lo hicieron
+
+2. Codigo
+2.1 Carpetas de su proyecto
+2.2 Base de Datos
+2.3 Fragmento de Codigo Favorito
+
+3. Mostrar el Sistema
+
+-------------
+
+Tiempo: Max 35 minutos
+Dos profesores: Evaluar
+
+-------
+
+Cuentan con el apoyo del profesor ( Pero mi apoyo se acaba el viernes a las 9 pm ).
