@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}" />
+  </head>
+  <body class="dashboard-body">
+    
+    <nav class="top-nav">
+      <h2>Panel Principal</h2>
+      <a href="{{ url_for('main.logout') }}" class="btn-logout">Cerrar Sesión</a>
+    </nav>
+
+    <main class="dashboard-container">
+      
+      <section class="kpi-grid">
+        <div class="card">
+          <h3>Ventas del Día</h3>
+          <p class="kpi-value">$1,250.00</p>
+        </div>
+        <div class="card">
+          <h3>Nuevas Órdenes</h3>
+          <p class="kpi-value">24</p>
+        </div>
+        <div class="card">
+          <h3>Clientes Activos</h3>
+          <p class="kpi-value">142</p>
+        </div>
+      </section>
+
+      <section class="card table-container">
+        <h3>Órdenes Recientes</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ID Órden</th>
+              <th>Cliente</th>
+              <th>Fecha</th>
+              <th>Total</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1042</td>
+              <td>carlos@test.com</td>
+              <td>2026-06-20</td>
+              <td>$150.00</td>
+              <td><span class="badge success">Completado</span></td>
+            </tr>
+            <tr>
+              <td>#1043</td>
+              <td>maria@test.com</td>
+              <td>2026-06-20</td>
+              <td>$85.50</td>
+              <td><span class="badge pending">Pendiente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </body>
+</html>
